@@ -2,7 +2,7 @@ name: 'dbt_production' #  project name
 version: '1.0.0'
 config-version: 2
 
-# This setting configures which "profile" dbt uses for this project.
+# This setting configures which "profile" dbt uses for this project. Fivetran will use your connection settings defined in the UI, making this only relevant to local development.
 profile: 'dbt_production'
 
 # These configurations specify where dbt should look for different types of files.
