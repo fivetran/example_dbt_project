@@ -1,1 +1,19 @@
+packages:
 
+# To see details on specific details on Fivetran Data Models, see (https://fivetran.com/docs/transformations/data-models#fivetrandatamodels)
+# To see additional packages that may be usefule, see (https://hub.getdbt.com/)
+# Below are a few examples, feel free to add or remove packages
+# Do keep in mind that the Fivetran Data Models will expect your connector to use the default name. If your connector does not use the default name, make this configuration in dbt_project.yml file under 'vars'.
+
+
+  - package: fivetran/fivetran_log
+    version: [">=0.7.0", "<0.8.0"]
+    
+  - package: fivetran/shopify
+    version: [">=0.9.0", "<0.10.0"] # we recommend using ranges to capture non-breaking changes automatically
+    
+  - package: dbt-labs/dbt_utils
+    version: 1.1.1
+
+  - package: dbt-labs/codegen
+    version: 0.10.0
