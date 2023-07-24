@@ -22,6 +22,15 @@ clean-targets:         # directories to be removed by `dbt clean`
 
 models:
   dbt_production:
+    0_staging:
+      +materialized: ephemeral
+    1_intermediate:
+      +materialized: view
+      +schema: intermediate
+    2_output:
+      +pre-hook: "{{ my_schema_relations() }}"
+      +materialized: table
+      +database: analytics_database
 
 
 vars:
