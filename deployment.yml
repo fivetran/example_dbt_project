@@ -1,1 +1,20 @@
+jobs:
+ - name: my_deployment_job_name
+   targetName: dev 
+   schedule: 0 12 * * * 
+   timeout: 2h30m
+   steps:
+     - name: run staging models 
+       command: dbt run --select +0_staging
+     - name: test square models
+       command: dbt test --select +employee_shifts
+     - name: try source freshness
+       command: dbt source freshness --select source:square
 
+ - name: dbt selector models
+   targetName: dev 
+   schedule: 0 12 * * * 
+   timeout: 2h30m
+   steps:
+     - name: run the selector from yml file 
+       command: dbt run --selector daily_load_only_database_intermediate
