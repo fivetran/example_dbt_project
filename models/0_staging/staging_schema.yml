@@ -1,16 +1,15 @@
 version: 2
 
 models:
-  - name: my_first_dbt_model
-    description: "A starter dbt model"
+  - name: example_one
+    description: "First layer of my NHL Standings where records are not deleted"
     columns:
-      - name: id
-        description: "The primary key for this table"
+      - name: _fivetran_deleted
+        description: "Fivetran's soft delete record"
         tests:
-          - unique
-          - not_null
-
-  - name: my_second_dbt_model
+          - accepted_values:
+              values: ['False']
+  - name: example_two
     description: "A starter dbt model"
     columns:
       - name: id
