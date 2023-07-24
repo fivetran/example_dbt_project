@@ -25,4 +25,7 @@ models:
 
 
 vars:
-  
+  # shopify_database: shopify_connector_database_name # this usually does not change
+  # shopify_schema: shopify_connector_name
+  # fivetran_log_database: fivetran_log_connector_database_name # this usually does not change
+  # fivetran_log_schema: fivetran_log_connector_name 
