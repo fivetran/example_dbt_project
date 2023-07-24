@@ -1,0 +1,34 @@
+version: 2
+    
+sources:
+  - name: nhl_standings # cloud function connector
+    tables:
+      - name: hockey_standings
+
+  - name: aurora_postgres_state_data # database connector and schema
+    tables:
+      - name: us_states
+      - name: us_states_rollup
+        description: a rollup of the states table
+      - name: us_counties
+      - name: us_counties_recent
+      - name: colleges
+
+  - name: sql_server_dbo # database connector and schema
+    tables:
+      - name: customers
+      - name: accounts
+      - name: clients
+      - name: stores
+      - name: transactions
+
+  - name: square # my square connector
+    tables:
+     - name: employee
+     - name: employee_location
+     - name: employee_wage
+     - name: location_capability
+     - name: shift
+     - name: shift_break
+     - name: break_type
+     - name: workweek_history
