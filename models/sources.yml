@@ -1,6 +1,8 @@
 version: 2
-    
+
 sources:
+# Sources listed below should closely resemble the names of your Fivetran connectors. These 'names' are the names of schemas
+
   - name: nhl_standings # cloud function connector
     tables:
       - name: hockey_standings
@@ -32,3 +34,18 @@ sources:
      - name: shift_break
      - name: break_type
      - name: workweek_history
+     - name: example_table
+       description: feel free to write some descriptions about your Fivetran loaded tables. This is an example
+       identifier: different_name_than_example_table
+       loaded_at_field: _fivetran_synced
+       freshness:
+         warn_after:
+           count: 6
+           period: hour
+         error_after:
+           count: 24
+           period: hour
+
+# For additional configuration, visit https://docs.getdbt.com/reference/source-properties
+        
+
