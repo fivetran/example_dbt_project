@@ -13,18 +13,9 @@
 -- ) }}
 
 with source_data as (
-
-    select 1 as id
-    union all
-    select null as id
-
+    select * from {{ source('nhl_standings', 'hockey_standings') }}
+    where _fivetran_deleted = 'False'
 )
 
 select *
 from source_data
-
-/*
-    Uncomment the line below to remove records with null `id` values
-*/
-
--- where id is not null
