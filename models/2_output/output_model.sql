@@ -4,4 +4,4 @@ with int_data as (
 
 select
 table_name
-, case when m
+, case when date(most_recent_sync) > date('2023-01-01') then 'this data is fresh' else 'this data is stale' end as data_freshness
