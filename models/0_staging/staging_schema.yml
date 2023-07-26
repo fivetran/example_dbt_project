@@ -1,7 +1,7 @@
 version: 2
 
 models:
-  - name: example_one
+  - name: staging_example_one
     description: "First layer of my NHL Standings where records are not deleted"
     columns:
       - name: _fivetran_deleted
@@ -9,7 +9,7 @@ models:
         tests:
           - accepted_values:
               values: ['False']
-  - name: example_two
+  - name: staging_example_two
     description: "A starter dbt model"
     columns:
       - name: id
