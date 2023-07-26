@@ -56,6 +56,8 @@ Paste your connector_name_schema_name to the `name` section of one of the source
 
 ## Open your `0_staging` folder and navigate to `example_one.sql`
 
-Notice how this query is using a source function. We need to make sure we modify this to read for your new source you just added in the step prior.
+Notice how this query is using a source function. We need to make sure we modify this to read for your new source you just added in the step prior. Feel free to check out `example_two.sql` as well and include your own logic.
+
+If you are feeling very comfortable, modify models in the `1_intermediate` and `2_output` folders as well. 
 
 ## Step 4
