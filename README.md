@@ -54,10 +54,10 @@ In this case, I will want to take note of `postgres_rds_animal_crossing` because
 
 Paste your connector_name_schema_name to the `name` section of one of the sources blocks. Then add your table names in the tables sections. If you need help on this part, feel free to read this post on Fivetran Community (https://community.fivetran.com/t5/user-group-for-dbt/sources-how-to-properly-utilize-integrated-scheduling/m-p/648#M56)
 
-## Open your `0_staging` folder and navigate to `example_one.sql`
+## Open your `0_staging` folder in the models directory and navigate to `staging_example_one.sql` and `staging_example_two.sql`
 
-Notice how this query is using a source function. We need to make sure we modify this to read for your new source you just added in the step prior. Feel free to check out `example_two.sql` as well and include your own logic.
+Notice how these query use a source function. We need to make sure we modify these to read for your new source tables you just added in the step prior. Because this is just an example, it is impossible to test that everything works without letting Fivetran surface the logs. This is why it is important to develop with dbt Core or dbt Cloud.
 
-If you are feeling very comfortable, modify models in the `1_intermediate` and `2_output` folders as well. 
+## Step 4 (Link your new repository to Fivetran)
 
-## Step 4
+Navigate to Fivetran's Transformations tab in the UI. Either get started or go to settings to begin the setup with GitHub. Add Fivetran's SSH keys to your deploy keys and make sure you enter the ssh address of your repository in the Fivetran UI.
