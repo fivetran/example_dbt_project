@@ -1,5 +1,5 @@
 ### Example repository to use with Fivetran Transformations for dbt Core™
-Use this repository as a template to get up and running quickly with Fivetran Transformations for dbt Core™
+This repository can be used as a template to get up and running quickly with Fivetran Transformations for dbt Core™. We do recommend developing your models using dbt Core or dbt Cloud. More info can be found @ https://www.getdbt.com/
 
 # Step 1 (Create a GitHub account)
 If you haven't already, create a GitHub account. There are free plans available.
