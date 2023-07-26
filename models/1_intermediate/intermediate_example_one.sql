@@ -1,15 +1,16 @@
 with example_one as (
 
-  select * from {{ ref('example_one') }}
+  select * from {{ ref('staging_example_one') }}
 
   )
 ,
 
 example_two as (
 
-  select * from {{ ref('example_two') }}
+  select * from {{ ref('staging_example_two') }}
   
   )
 
-select * from example one
-  left join example_two on example_two.id = example_one.team_id
+select * from example_one
+union
+select * from example_two
