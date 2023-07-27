@@ -58,6 +58,6 @@ Paste your connector_name_schema_name to the `name` section of one of the source
 
 Notice how these query use a source function. We need to make sure we modify these to read for your new source tables you just added in the step prior. Because this is just an example, it is impossible to test that everything works without letting Fivetran surface the logs. This is why it is important to develop with dbt Core or dbt Cloud.
 
-## Step 4 (Link your new repository to Fivetran)
+# Step 4 (Link your new repository to Fivetran)
 
 Navigate to Fivetran's Transformations tab in the UI. Either get started or go to settings to begin the setup with GitHub. Add Fivetran's SSH keys to your deploy keys and make sure you enter the ssh address of your repository in the Fivetran UI.
