@@ -34,9 +34,9 @@ We need to make a few changes to this repository to integrate with your Fivetran
 There are already a few packages in this file, feel free to modify, remove or keep them!
 
 ## If needed, change the source location (usually Step 3) of your package to match the name of your Fivetran Connector. You can make this change in the `dbt_project.yml` file located in your new repository
-<img width="874" alt="image" src="https://github.com/fivetran/example_dbt_project/assets/97244562/89c6fcbd-b06a-48a1-b416-1e6f3bafa224">
 
 By default, our Data Models will assume your connector is named the default name. If your connector is not named the default name, put **your connector name** (schema name) in the schema portion of this variable. Typically, the database variable is not needed (you can comment out or delete that line if so).
+<img width="874" alt="image" src="https://github.com/fivetran/example_dbt_project/assets/97244562/89c6fcbd-b06a-48a1-b416-1e6f3bafa224">
 
 
 ***If you are interested in adding your own custom sql, please follow these steps:***
