@@ -1,13 +1,15 @@
 version: 2
 
 sources:
-# Sources listed below should closely resemble the names of your Fivetran connectors. These 'names' are the names of schemas
+# Sources listed below should closely resemble the names of your Fivetran connectors. Names are at your descretion. Schema's will mirror your destination schemas.
 
-  - name: nhl_standings # cloud function connector
+  - name: nhl_standings # this can be whatever I want
+    schema: connector_name # this is the name of a connector with a SINGLE SCHEMA
     tables:
       - name: hockey_standings
 
-  - name: aurora_postgres_state_data # database connector and schema
+  - name: aurora_postgres # this can be whatever I want
+    schema: connector_name_shemaA_name # Connector and first schema name for connector with MULTIPLE SCHEMAS
     tables:
       - name: us_states
       - name: us_states_rollup
@@ -16,7 +18,8 @@ sources:
       - name: us_counties_recent
       - name: colleges
 
-  - name: sql_server_dbo # database connector and schema
+  - name: sql_server
+    schema: sql_server_dbo
     tables:
       - name: customers
       - name: accounts
@@ -24,7 +27,7 @@ sources:
       - name: stores
       - name: transactions
 
-  - name: square # my square connector
+  - name: square
     tables:
      - name: employee
      - name: employee_location
