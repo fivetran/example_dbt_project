@@ -52,7 +52,7 @@ In this case, I will want to take note of `postgres_rds_animal_crossing` because
 
 ## Navigate to your `sources.yml` file that is already in your `models` folder
 
-Paste your connector_name_schema_name to the `name` section of one of the sources blocks. Then add your table names in the tables sections. If you need help on this part, feel free to read this post on Fivetran Community (https://community.fivetran.com/t5/user-group-for-dbt/sources-how-to-properly-utilize-integrated-scheduling/m-p/648#M56)
+Paste your connector_name_schema_name to the `schema` section of one of the sources blocks. Then add your table names in the tables sections. If you need help on this part, feel free to read this post on Fivetran Community (https://community.fivetran.com/t5/user-group-for-dbt/sources-how-to-properly-utilize-integrated-scheduling/m-p/648#M56)
 
 ## Open your `0_staging` folder in the models directory and navigate to `staging_example_one.sql` and `staging_example_two.sql`
 
