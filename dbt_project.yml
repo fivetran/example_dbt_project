@@ -30,7 +30,7 @@ models:
     2_output:
       +pre-hook: "{{ my_schema_relations() }}"
       +materialized: table
-      +database: analytics_database
+      # +database: analytics_database
 
 
 vars:
