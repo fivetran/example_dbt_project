@@ -1,7 +1,7 @@
 {% macro my_schema_relations() %}
 
 {% set my_schema_relations = dbt_utils.get_relations_by_pattern(
-    schema_pattern='dbt_%',
+    schema_pattern='%fivetran%',
     table_pattern='%'
 ) %}
 
