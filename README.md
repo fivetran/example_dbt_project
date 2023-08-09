@@ -60,4 +60,4 @@ Notice how these query use a source function. We need to make sure we modify the
 
 # Step 4 (Link your new repository to Fivetran)
 
-Navigate to Fivetran's Transformations tab in the UI. Either get started or go to settings to begin the setup with GitHub. Add Fivetran's SSH keys to your deploy keys and make sure you enter the ssh address of your repository in the Fivetran UI.
+Navigate to Fivetran's Transformations tab in the UI. Either get started or go to settings to begin the setup with GitHub. Add Fivetran's SSH key to your newly created repo's 'deploy keys' and then make sure you enter the ssh address (located in 'Code' button) of your repository in the Fivetran UI.
