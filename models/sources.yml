@@ -3,10 +3,11 @@ version: 2
 sources:
 # Sources listed below should closely resemble the names of your Fivetran connectors. Names are at your descretion. Schema's will mirror your destination schemas.
 
-  - name: nhl_standings # this can be whatever I want
-    schema: connector_name # this is the name of a connector with a SINGLE SCHEMA
+  - name: connector_name_shema_name # this can be whatever I want
+    schema: connector_name_shema_name # Connector and first schema name for connector with MULTIPLE SCHEMAS
     tables:
-      - name: hockey_standings
+      - name: table_name
+      - name: other_table_name
 
   - name: aurora_postgres # this can be whatever I want
     schema: connector_name_shemaA_name # Connector and first schema name for connector with MULTIPLE SCHEMAS
