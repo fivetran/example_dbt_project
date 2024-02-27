@@ -18,7 +18,7 @@ jobs:
    schedule: 0 0 * * * # This example will run every day at midnight.
    steps:
      - name: run models
-       command: dbt run --models my_first_model my_second_model # This example will run two specific models.
+       command: dbt run --select my_first_model my_second_model # This example will run two specific models (which do not exist, so there is nothing to do)
 
  - name: macro_run
    schedule: 30 7 * * 1-5 # The example will run every weekday at 7:30am.
