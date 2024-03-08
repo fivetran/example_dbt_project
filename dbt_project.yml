@@ -34,8 +34,8 @@ models:
 
 
 vars:
-  delete_from_database: {{target.database}}
-  delete_from_schema: {{target.schema}}
+  delete_from_database: {target.database}
+  delete_from_schema: {target.schema}
   delete_from_tables: ['table_a', 'table_b', 'table_c', 'table_d']
   # shopify_database: shopify_connector_database_name # this usually does not change
   # shopify_schema: shopify_connector_name
