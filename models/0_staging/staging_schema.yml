@@ -2,7 +2,7 @@ version: 2
 
 models:
   - name: staging_example_one
-    description: "First layer of my NHL Standings where records are not deleted"
+    description: "Use this to talk a little about your model"
     columns:
       - name: _fivetran_deleted
         description: "Fivetran's soft delete record"
@@ -10,7 +10,7 @@ models:
           - accepted_values:
               values: ['False']
   - name: staging_example_two
-    description: "A starter dbt model"
+    description: "Use this to talk a little about your model"
     columns:
       - name: id
         description: "The primary key for this table"
