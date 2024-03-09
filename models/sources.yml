@@ -3,8 +3,8 @@ version: 2
 sources:
 # Sources listed below should closely resemble the names of your Fivetran connectors. Names are at your descretion. Schema's will mirror your destination schemas.
 
-  - name: logs_data # this can be whatever I want
-    schema: fivetran_log # Connector and first schema name for connector with MULTIPLE SCHEMAS
+  - name: logs_data 
+    schema: fivetran_log # Connector name.. don't change unless you named yours differently
     tables:
       - name: log
       - name: user
