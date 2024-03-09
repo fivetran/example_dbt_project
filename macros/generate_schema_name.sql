@@ -10,5 +10,4 @@
         {{ default_schema }}_{{ custom_schema_name | trim }}
 
     {%- endif -%}
-{{ log('For more info on this macro please see the documentation https://docs.getdbt.com/docs/build/custom-schemas', info=True) }}
 {%- endmacro %}
