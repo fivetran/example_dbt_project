@@ -1,5 +1,5 @@
 with source_data as (
-    select max(_fivetran_synced) as most_recent_sync from {{ source('connector_name_schema_name', 'other_table_name') }}
+    select max(_fivetran_synced) as most_recent_sync from {{ source('logs_data', 'account') }}
     where _fivetran_deleted = 'False'
 )
 
